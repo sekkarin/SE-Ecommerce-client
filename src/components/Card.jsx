@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Card = ({ item }) => {
-  const { _id, name, image, price, description } = item;
+  const { name, image, price, description } = item;
   const [isHeartFailed, setIsHeartFiled] = useState(false);
   const handleHeartClick = () => {
     setIsHeartFiled(!isHeartFailed);
