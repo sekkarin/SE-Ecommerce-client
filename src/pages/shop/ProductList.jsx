@@ -9,6 +9,7 @@ const ProductList = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemPerPage, setItemPerPage] = useState(8);
   const [categories, setCategories] = useState([]);
+  // fetch date mock
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -24,6 +25,7 @@ const ProductList = () => {
     fetchData();
   }, []);
 
+  // filter items 
   const filterItems = (category) => {
     const filtered =
       category === "all"
@@ -35,7 +37,7 @@ const ProductList = () => {
     setSelectedCategory(category);
     setCurrentPage(1);
   };
-
+  // sort date
   const handleSortChange = (option, products) => {
     setSortOption(option);
     let sortedItem = [...products];
@@ -67,6 +69,7 @@ const ProductList = () => {
   const indexOfLastItem = itemPerPage * currentPage;
   const indexOfFirstItem = indexOfLastItem - itemPerPage;
 
+  // date render
   const currentItems = filteredItems.slice(indexOfFirstItem, indexOfLastItem);
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
