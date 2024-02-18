@@ -1,3 +1,4 @@
+
 const categoryItems = [
   {
     id: 1,
@@ -33,7 +34,7 @@ const Categories = () => {
         <h1 className=" title">Popular Categories</h1>
       </div>
       <div className="flex flex-col sm:flex-row flex-warp gap-6 justify-around items-center mt-12">
-        {categoryItems.map((item, i) => (
+        {categoryItems.map((item) => (
           <div
             key={1}
             className="shadow-lg rounded-md bg-white py-6 px-5 w-72 mx-auto text-center cursor-pointer hover:-translate-y-4 transition-all duration-300"

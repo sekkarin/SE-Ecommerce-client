@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+/* eslint-disable react/prop-types */
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Card = ({ item }) => {
@@ -10,7 +11,7 @@ const Card = ({ item }) => {
   return (
     <div className="card shadow-xl relative mr-5 md:my-5 h-120">
       <div
-        className={`rating gap-1 absolute right-2 top-2 rounded-full p-4 heartStar bg-red ${
+        className={`rating heart gap-1 absolute right-2 top-2 rounded-full p-4 heartStar bg-red ${
           isHeartFailed ? "text-rose-500" : "text-white"
         }`}
         onClick={handleHeartClick}

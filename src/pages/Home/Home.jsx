@@ -1,4 +1,4 @@
-import Banner from "../components/Banner";
+import Banner from "../../components/Banner";
 import Categories from "./Categories";
 import SpecialProduct from "./SpecialProduct";
 import Testimonials from "./Testimonials";

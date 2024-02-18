@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
-import { useEffect, useState, useRef } from "react";
+import  { useEffect, useState, useRef } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import Card from "../components/Card";
+import Card from "../../components/Card";
 
 const SampleNextArrow = (props) => {
   const { className, style, onClick } = props;
